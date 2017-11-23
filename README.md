@@ -23,7 +23,7 @@ After downloading the FPN-MODELS, place the weights file in FPN-face-detection/o
 **Train**
 ----------
 ### 1、prepare training data
-    I use the wider-face dataset to train this network. Firstly you should transform this dataset to pascal voc dataset style.[Tutorial](http://blog.csdn.net/sinat_30071459/article/details/50723212) can help us a lot.
+I use the wider-face dataset to train this network. Firstly you should transform this dataset to pascal voc dataset style.[Tutorial](http://blog.csdn.net/sinat_30071459/article/details/50723212) can help us a lot.
 
 ### 2、Create symlinks for the PASCAL VOC dataset
     ln -s your_Vocdevikit_path VOCdevkit2007
