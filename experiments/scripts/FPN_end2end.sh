@@ -57,9 +57,3 @@ NET_FINAL=`grep -B 1 "done solving" ${LOG} | grep "Wrote snapshot" | awk '{print
 #NET_FINAL=`grep -B 1 "done solving" ${LOG} | grep "Wrote snapshot" | awk '{print $3}'`
 echo $NET_FINAL
 set -x
-
-time python ./faster_rcnn/test_net.py --gpu ${GPU_ID} \
-  --weights ${NET_FINAL} \
-  --imdb ${TEST_IMDB} \
-  --cfg ${CFG} \
-  --network FPN_test
