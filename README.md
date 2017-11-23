@@ -4,7 +4,7 @@ This repository contains source files of face detection using the FPN. It is dev
 
 **Requirements**
 ---------
-1、tensorflow
+1、tensorflow  
 2、For training,you'd better use a GPU
 
 **Installation**
