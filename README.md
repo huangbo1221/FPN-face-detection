@@ -9,12 +9,12 @@ This repository contains source files of face detection using the FPN. It is dev
 
 **Installation**
 ----------------
-1、Clone this repository to your directory
+# 1、Clone this repository to your directory
     git clone --recursive git@github.com:huangbo1221/FPN-face-detection.git
 
-2、Download the pre-trained models named [Resnet50.npy](https://pan.baidu.com/s/1gfOYAbD),password:kx45
+# 2、Download the pre-trained models named [Resnet50.npy](https://pan.baidu.com/s/1gfOYAbD),password:kx45
 
-3、Download the [FPN-MODELS](https://pan.baidu.com/s/1eS6JGUQ),password:e67q
+# 3、Download the [FPN-MODELS](https://pan.baidu.com/s/1eS6JGUQ),password:e67q
 
 **Test**
 ----------
@@ -22,11 +22,11 @@ After downloading the FPN-MODELS, place the weights file in FPN-face-detection/o
 
 **Train**
 ----------
-1、prepare training data
+# 1、prepare training data
     I use the wider-face dataset to train this network. Firstly you should transform this dataset to pascal voc dataset style.[Tutorial](http://blog.csdn.net/sinat_30071459/article/details/50723212) can help us a lot.
 
-2、Create symlinks for the PASCAL VOC dataset
+# 2、Create symlinks for the PASCAL VOC dataset
     ln -s your_Vocdevikit_path VOCdevkit2007
 
-3、Run script to train model
+# 3、Run script to train model
     nohup ./experiments/scripts/FPN_end2end.sh 0 FPN pascal_voc2007 --set RNG_SEED 2 TRAIN.SCALES "[800]" > FPN.log 2>&1 &
